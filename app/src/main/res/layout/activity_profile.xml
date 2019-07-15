@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="147dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alc" />
+
+    <TextView
+        android:id="@+id/my_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/my_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_name"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/track_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track:"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                tools:text="Track" />
+
+            <TextView
+                android:id="@+id/track_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/track_field"
+                android:text="@string/track"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                tools:text="@string/track" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/country_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country:"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                tools:text="Track" />
+
+            <TextView
+                android:id="@+id/country_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/country_field"
+                tools:text="@string/track" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/email_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                tools:text="Email" />
+
+            <TextView
+                android:id="@+id/email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/email_field"
+                tools:text="@string/track" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tel_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number:"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                tools:text="Phone Number" />
+
+            <TextView
+                android:id="@+id/tel_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tel"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tel_field"
+                tools:text="@string/track" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/slack_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slack Username:"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                tools:text="Track" />
+
+            <TextView
+                android:id="@+id/slack_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slack_username"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/slack_field"
+                tools:text="@string/track" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

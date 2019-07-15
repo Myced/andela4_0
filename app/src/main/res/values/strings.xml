@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Andela</string>
+    <string name="ALC_title">ALC 4 Phase 1</string>
+    <string name="welcome_to_alc">Welcome to ALC 4.0</string>
+    <string name="About_ALC">About ALC</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_name">Ndi Cedric Tifuh</string>
+    <string name="track">Android</string>
+    <string name="country">Cameroon</string>
+    <string name="email">tncedric@gmail.com</string>
+    <string name="tel">+237 673901939</string>
+    <string name="slack_username">\@tncedric</string>
+</resources>
